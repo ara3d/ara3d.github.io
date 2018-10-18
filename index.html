@@ -1,194 +1,725 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Ara3D.com</title>
-</head>
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-<style>
-    html {
-        background-color: white;
-        background-image: url('macaw-1416395_1920.jpg');
-        background-size: cover;
-        background-position: center;
+  <title>Ara 3D</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  .social {
+      width: 100%; display: table-row;
+  }
+  .img-cropper {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100px;
+  }
+  .social div {
+      display: table-cell;
+  }
+  .shadow {
+            transform: translate(1000px, -550px) perspective(500px)
+                       translate(-1000px, 550px)
+                       rotateX(90deg) scale(1,0.5);      
     }
-    body, a {    
-        color: whitesmoke;
-        font-family: 'Open Sans', sans-serif;
-        text-shadow: 4px 3px 4px #000000;
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #01012d;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #01012d;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar-logo {
+    transition: 0.4s;
+  }
+  .navbar-logo-shrink {
+    width: 50px;
+    height: 50px;
+    left: -350px;
+    top: -25px;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
     }
-    .btn-link {
-        color: blue;
-        text-shadow: 4px 3px 4px #000000;
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
     }
-    h1, h2, h3 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 400;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
     }
-    .content {
-        background: rgba(98, 131, 169, 0.66);
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        padding: 15px;
-        display: flex;
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
     }
+  }
+  @media screen and (max-width: 480px) {
     .logo {
-        color: whitesmoke;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight:400;
-        font-size: 48px;
-        width: 25%;
-        display: inline-flex;
+        font-size: 150px;
     }
-    .right {
-        display: inline-flex;
-        width: 25%;
-        height: 100%;
-    }
-    .social {
-        vertical-align: middle;
-    }
-    .main {
-        display: inline-flex;
-        float: left;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        font-size: x-large;
-    }
-</style>
-<body>
-    <div class="content">
-        <div class="logo">Ara3D.com</div>
-        
-        <div class="main">            
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-            <div class="row team">            
-                Ara 3D is a software company based in Montreal, Canada
-                founded by Christopher Diggins. 
-            </div>
-            <p></p>
-            <div class="row team">
-                Our specialities include 3D content creation, visualization, 
-                data translation, automation, and optimization. 
-            </div>
-            <p></p>
-            <div class="row contact">
-                Let's start a conversation about your workflows, processes, and challenges.            
-                Reach out to us at <a href="mailto:cdiggins@gmail.com">cdiggins@gmail.com</a>.
-            </div>
-            <!--
-            <div class="row mission">
-                We help customers unleash their creativity
-                and increase productivity through innovative 
-                3D software.   
-            </div>
-            <p></p>
-            <div class="row specialty">
-                Our specialities include 3D content creation, visualization, 
-                data translation, automation, optimization, and 
-                solving <i>hard</i> problems.
-            </div>
-            <p></p>
-            <div class="row contact">
-                Let's talk about your workflows, processes, challenges, and ideas.            
-                Working together we can find better ways of doing things and realizing
-                your ideas. 
-            </div>
-            <p></p>
-            <div class="row team">            
-                Ara3D is founded by Christopher Diggins who has over 20 years of 
-                software development experience, and 10 years in media and 
-                entertainment at Autodesk and Microsoft.
-            </div>
-            -->
-        </div>
-
-        <div class="right">
-
-
-        <div class="social">
-        <div>
-            <a href="mailto:cdiggins@gmail.com" class="btn-link" style="text-decoration: none" title="email">
-                <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
-                </span>
-            </a>
-        </div>
-        <div>
-            <a href="https://twitter.com/cdiggins" class="btn-link" style="text-decoration: none" title="Twitter">
-                <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
-                </span>
-            </a>
-        </div>
-        <div>
-            <a href="https://www.linkedin.com/in/cdiggins/" class="btn-link" style="text-decoration: none" title="LinkedIn">
-                <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
-                </span>
-            </a>
-        </div>
-        <div>
-            <a href="https://www.facebook.com/diggins.software" class="btn-link" style="text-decoration: none" title="FaceBook">
-                <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
-                </span>
-            </a>
-        </div>
-        <div>
-            <a href="https://github.com/cdiggins" class="btn-link" style="text-decoration: none" title="GitHub">
-                <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
-                </span>
-            </a>
-        </div>
-        <div>
-            <a href="https://stackoverflow.com/users/184528/cdiggins" class="btn-link" style="text-decoration: none" title="StackOverflow">
-                <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse" aria-hidden="true"></i>
-                </span>
-            </a>
-        </div>
-        <div>
-            <a href="https://www.youtube.com/user/cdiggins" class="btn-link" style="text-decoration: none" title="YouTube">
-                <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-                <i class="fa fa-youtube fa-stack-1x fa-inverse" aria-hidden="true"></i>
-                </span>
-            </a>
-        </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">
+        <svg class="navbar-logo" width="150" height="150" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 110 110">
+            <defs>
+                <linearGradient id="fadeGray" y2="100%" x2="0%">
+                    <stop stop-color="gray" stop-opacity="0" offset="0"/>
+                    <stop stop-color="gray" stop-opacity="1" offset="1"/>
+                </linearGradient>
+                <filter id="f4" x="0" y="0" >
+                        <feOffset result="offOut" in="SourceGraphic" dx="-3" dy="3" />
+                        <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+                        values="0.4 0 0 0 0 0 0.4 0 0 0 0 0 0.4 0 0 0 0 0 0.8 0" />
+                        <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="2" />
+                        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                      </filter>
+            </defs>
+            <g id="circle-logo">            
+            <circle cx="48" cy="44" r="48" stroke-width="3" fill="White"></circle>
+            <!--                
+             <g id="a" filter="url(#f4)" transform="scale(1 0.8)">
+                <path fill="hsl(312, 46%, 50%)" stroke-width="1" d="M 50 0 L 53 12 L 27 100 L 24 87 L 50 0"></path>
+                <path fill="#9370DB" stroke-width="1" d="M 80 85 Q 60 50 10 25 Q 50 60 65 100 L 80 85"></path>
+                <path fill="hsla(256, 90%, 39%, 1)" stroke-width="1" d="M 50 0 L 65 100 L 80 85 L 50 0"></path>
+            </g>
+        -->
+        <g id="a" filter="url(#f4)" transform="scale(1 0.8)">
+                <path fill="#01012d" stroke-width="1" d="M 50 0 L 53 12 L 27 100 L 24 87 L 50 0"></path>
+                <path fill="#9370DB" stroke-width="1" d="M 80 85 Q 60 50 10 25 Q 50 60 65 100 L 80 85"></path>
+                <path fill="hsla(256, 90%, 39%, 1)" stroke-width="1" d="M 50 0 L 65 100 L 80 85 L 50 0"></path>
+            </g>
+        </g>
+    </svg>          
+      </a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#technology">TECHNOLOGY</a></li>
+        <!-- <li><a href="#team">TEAM</a></li> -->
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
     </div>
-        <!--
-    <div>
-        <a href="http://cdiggins.github.io/rss.xml" class="btn-link" style="text-decoration: none" title="RSS">
-            <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
-            <i class="fa fa-rss fa-stack-1x fa-inverse" aria-hidden="true"></i>
-            </span>
-        </a>                    
+  </div>
+</nav>
+
+<div id="about" class="jumbotron text-center">
+  <h1>Ara 3D</h1> 
+  <!-- <p>Accelerating creativity through innovation</p> -->
+  <p>Innovative 3D Software Solutions</p>
+  <!--
+  <form>
+    <div class="input-group">
+      <form action="mailto:cdiggins@gmail.com" method="post" enctype="text/plain">
+        <input type="text" class="form-control" size="50" name="body" value="Ara 3D sounds awesome tell me more about ..."/>
+        <input type="hidden" name="subject" value="Tell me more about Ara3D.com"/>
+        <div class="input-group-btn">
+          <input type="submit" value="send" class="btn btn-danger">Send</button>
+        </div>
+    </form>
     </div>
+  </form>
 -->
-    
-    <!--
-    <div>
-        We are 
-        we want to hear about your workflows, processes, and 
-        needs, we a 
-    </div>
-
-    <div>
-        if you are curious how we built this web-site, and the technology
-        behind it, we love to talke 
-    </div>
-    -->
 </div>
+
+<!-- Container (About Section) -->
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-sm-8">
+      <h2>
+        A Montreal based start-up<br/>specializing in 3D software development. 
+      </h2>
+      <p>
+        We develop tools, plug-ins, and libraries for end-users or integration into other tools.
+        We bring our unique insights and experience in the domain of 3D data, to tools 
+        that process geometry in an un efficient manner and creating tools that provide unprecedented creative flexibility to the user.
+      </p>
+
+      <p>
+        Our specialties:
+      </p>
+      <ul>
+        <li>3D data processing</li>
+        <li>Cross-language development (C#, C++, Python, JavaScript)</li>
+        <li>Programming language design and implementation (text-based and visual)</li>
+        <li>Development of libraries, SDKs, and APIs</li>
+      </ul>
+      
+      <!-- <br><button class="btn btn-default btn-lg">Get in Touch</button> -->
+    </div>
+    <div class="col-sm-4">
+        <div class="img-cropper" width="100%">
+            <!-- image by David Clode https://unsplash.com/photos/0lwa8Dprrzs -->
+            <img src="macaw.jpg" width="100%"/>
+      </div>
+      <small><p class="text-center">Photo by <a href="https://unsplash.com/photos/0lwa8Dprrzs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Clode</a> on Unsplash
+    </p></small>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="projects" class="container-fluid">
+  <div class="text-center">
+  <h2>Current Projects</h2>
+  <p>
+    Here are a few of the projects we are working on. 
+  </p>
+</div>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>Revit Addins</h4>
+      <p>
+        We are working with <a href="http://www.nextgenxr.com">Next Gen XR</a> 
+        on developing revit plug-ins for exporting geometry and BIM data
+        from Revit as FBX and OBJ formats. Our competitive advantages is that we generate 
+        optimized quadrilaterals and polygons instead of a mess of coplanar triangles.
+      </p>
+    </div>    
+    <div class="col-sm-4">
+      <h4>3ds Max Plug-ins</h4>
+      <p>
+        We are working set of 3ds Max plug-ins for working with volumes and point-clouds, 
+        based on OpenVDB. We are also working on a native particle system that fully integrates
+        with the 3ds Max modifier stack.   
+    </p>
+    </div>
+    <div class="col-sm-4">
+      <h4>File Formats</h4>
+      <p>
+        We are developing the specification and reference implementations for several open 
+        file-formats for the efficient representation and 
+        serialization/deserialization of 3D and 2D data. These formats optimized for efficient 
+        rendering and processing in the browser using WebGL or into any OpenGL based rendering
+        context.  
+      </p>
+      <!--
+      <ul>
+        <li><a href="https://github.com/ara3d/bfast">BFAST</a> format for binary arrays</li> 
+        <li><a href="https://github.com/ara3d/bfast">G3D</a> format for geometry</li>
+        <li><a href="https://github.com/ara3d/s3d">S3D</a> format for scene graphs</li>
+      </ul>
+    -->
+    </div>
+  </div>
+</div>
+
+
+  <!-- Container (About Section) -->
+<div id="technology" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+        <h2>Technology</h2>
+        <p>
+            We are building a multi-language technology stack for 3D data processing 
+            that is second to none. Like any successful technology company our
+            foundation is a number of high quality industry proven open-source libraries
+            (e.g. OpenVDB, Assimp, System.Numerics, geometry3sharp, Three.JS,
+            OpenEXR, TBB, etc.). 
+        </p>  
+        <p>
+            In the process of building tools that surpass our customer's expectations we 
+            identified a need for some foundational low-level libraries that we are 
+            building ourselves, and releasing as open-source libraries.
+        </p>            
+        <ul>
+          <li><a href="https://github.com/ara3d/LinqArray">LinqArray</a> - A C# library for efficient processing of immutable array data structures</li>
+          <li><a href="https://github.com/ara3d/Math3D">Math3D</a> - A C# library of basic data structures and 3D vector math</li>
+          <li><a href="https://github.com/ara3d/FGeometry">FGeometry</a> - A C# library for 3D geometry manipulation</li>
+          <li><a href="https://github.com/ara3d/array_h">array_h</a> - A C++ library for working with containers of data in contiguous memory</li>
+          <li><a href="https://github.com/ara3d/bfast">BFAST</a> - A data/file format for storing arrays of binary data</li>
+          <li><a href="https://github.com/ara3d/s3d">S3D</a> - A file format for 3D scene data</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+
+        <h2>The Competitive Advantages of Open-Source</h2>
+
+        <p>
+          Ara 3D has a valuable core set of closed source IP that is built from our unique 
+          insights and skills gained from decades of experience working in software development.
+          However, no company can ever attribute their financial succes to a vector math library 
+          that they kept proprietary, or a file format that no one else could use. 
+          <!--
+            In fact most
+            closed source general purpose libraries are usually buggy, incomplete, and offer 
+            sub-par performance compared to best in class open-source libraries. 
+          -->
+        </p>
+        <p>
+          Open-sourcing our foundation libraries (e.g. math, geometry, and array 
+          processing) gives our clients, partners, investors, and ourselves confidence 
+          that the libraries we are building on top of are the best quality they can be. 
+        </p>
+        <p>
+          By leveraging and contributing to the open-source community we benefit from the 
+          scrutiny and contributions of the open-source community and can go to market faster,
+          and with better technology and product.
+        </p>
+        <!--
+        <p>
+          Our mission is to establish Ara 3D as a leaders in the marketplace 
+          demonstrating vision, compentency, creativity, and innovation. 
+        </p>
+      -->
+      </div>      
+    </div>
+  </div>
+  
+  <!--
+
+      Our Team
+
+Ara 3D was founded by Christopher Diggins in 2018. He has over 20 years of software development experience from launching a small profitable e-commerce startup to working at Microsoft.
+
+From 2008 to 2017 Christopher worked for at Autodesk where he worked on the 3ds Max team as a principal engineer and lead the effort to develop the MCG visual programming environment.
+
+Christopher was co-author of The C++ Cookbook for O'Reilly and his published numerous articles on software development.
+
+Partnerships and Collaobrations
+
+We have working relationships with a number 
+
+TA Development 
+Next Gen XR 
+Clemex Technologies  
+-->
+
+<!-- Container (Portfolio Section) 
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div><br>
+
+-->
+  
+  
+<!-- Container (Pricing Section)
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+-->
+
+<!-- Container (Contact Section) 
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Montreal, Canada</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> cdiggins@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<footer id="contact" class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+        
+        <h2>Contact Us</h2>
+        <blockquote class="text-left">
+            <i>“As long as we work together – with both urgency and determination –<br/> there are no limits to what we can achieve.”</i><br/>
+            <div class="text-right">-Paul Allen</div>
+        </blockquote>
+        <p class="text-left">
+            We are always interested in creating new relationships with people and business passionate about 3D. 
+            We would love to hear about what you are working on, what your needs are, and answering any
+            questions you may have. 
+        </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" width="100%">
+        <h4 class="text-center">Copyright 2018 Ara 3D Inc. <b> | </b> Montreal QC Canada<br/>(438)828-7208 <b> | </b> <a href="mailto:cdiggins@gmail.com">cdiggins@gmail.com</a></h4>
+        </div>
+    </div>    
+</footer>
+  
+<!--
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>
+        <div class="social" width="100%">
+            <center>
+                <div>
+                    <a href="mailto:cdiggins@gmail.com" class="btn-link" style="text-decoration: none" title="email">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/cdiggins" class="btn-link" style="text-decoration: none" title="Twitter">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/cdiggins/" class="btn-link" style="text-decoration: none" title="LinkedIn">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/diggins.software" class="btn-link" style="text-decoration: none" title="FaceBook">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/cdiggins" class="btn-link" style="text-decoration: none" title="GitHub">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://stackoverflow.com/users/184528/cdiggins" class="btn-link" style="text-decoration: none" title="StackOverflow">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-stack-overflow fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/user/cdiggins" class="btn-link" style="text-decoration: none" title="YouTube">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                        <i class="fa fa-youtube fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                </center>
+            </div>
+            
+            </div>      
+  </p>
+</footer>
+-->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+ // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+  $(window).scroll(function() {
+    $(".navbar-logo").each(function(){
+      var winTop = $(window).scrollTop();
+      if ( winTop > 50) {
+          $(this).addClass("navbar-logo-shrink");
+       }
+       else {
+         $(this).removeClass("navbar-logo-shrink");
+       }
+    })
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
 
 </body>
 </html>
