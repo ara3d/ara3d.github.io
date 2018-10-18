@@ -141,6 +141,15 @@
       border-radius: 0;
       font-family: Montserrat, sans-serif;
   }
+  .navbar-logo {
+    transition: 0.4s;
+  }
+  .navbar-logo-shrink {
+    width: 50px;
+    height: 50px;
+    left: -350px;
+    top: -25px;
+  }
   .navbar li a, .navbar .navbar-brand {
       color: #fff !important;
   }
@@ -213,7 +222,7 @@
         <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand" href="#myPage">
-        <svg width="150" height="150" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 110 110">
+        <svg class="navbar-logo" width="150" height="150" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 110 110">
             <defs>
                 <linearGradient id="fadeGray" y2="100%" x2="0%">
                     <stop stop-color="gray" stop-opacity="0" offset="0"/>
@@ -248,8 +257,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#products">PRODUCTS</a></li>
+        <li><a href="#technology">TECHNOLOGY</a></li>
+        <!-- <li><a href="#team">TEAM</a></li> -->
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
@@ -258,13 +268,17 @@
 
 <div class="jumbotron text-center">
   <h1>Ara 3D</h1> 
-  <p>Accelerating creativity through innovation</p> 
+  <!-- <p>Accelerating creativity through innovation</p> -->
+  <p>Innovative 3D Software Solutions</p>
   <form>
     <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
-      </div>
+      <form action="mailto:cdiggins@gmail.com" method="post" enctype="text/plain">
+        <input type="text" class="form-control" size="50" name="body" value="Ara 3D sounds awesome tell me more about ..."/>
+        <input type="hidden" name="subject" value="Tell me more about Ara3D.com"/>
+        <div class="input-group-btn">
+          <input type="submit" value="send" class="btn btn-danger">Send</button>
+        </div>
+    </form>
     </div>
   </form>
 </div>
@@ -272,78 +286,161 @@
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">
-      <h2>About Ara 3D</h2><br>
-      <h4>
-        Ara 3D is a software company based in Montreal, Canada founded by Christopher Diggins.
-      </h4><br>
+      <div class="col-sm-6">
+      <h2>
+        A Montreal based start-up<br/>specializing in 3D software development. 
+      </h2>
       <p>
-        We offer consulting services and training, and we develop software, plugins, services, or libraries using 
-        C++, C#, Python, JavaScript, TypeScript, and more. Our specialities include procedural 3D content 
-        creation, data visualization, data translation, automation, and optimization.
+        We develop tools, plug-ins, and libraries for end-users or integration into other tools.
+        We bring our unique insights and experience in the domain of processing 3D data in an efficient manner and creating tools that provide unprecedented creative flexibility to the user.
       </p>
-      <p>
 
-       We also have extesive 
-        experience in designining and implementing programming languages both traditional and visual. 
-    </p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+      <p>
+        Our specialties:
+      </p>
+      <ul>
+        <li>3D data processing</li>
+        <li>Cross-language development (C#, C++, Python, JavaScript)</li>
+        <li>Programming language design and implementation (text-based and visual)</li>
+        <li>Development of libraries, SDKs, and APIs</li>
+      </ul>
+      
+      <!-- <br><button class="btn btn-default btn-lg">Get in Touch</button> -->
     </div>
-  </div>
+    <div class="col-sm-6">
+      <img src="macaw-1416395_1920.jpg" width="100%"/>
+    </div>
 </div>
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
+<div id="projects" class="container-fluid">
+  <div class="text-center">
+  <h2>Current Projects</h2>
+  <p>
+    Here are some of the projects we are working on. 
+  </p>
+</div>
   <br>
-  <div class="row slideanim">
+  <div class="row">
     <div class="col-sm-4">
-      <h4>3ds Max Plugins</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4>Revit Addins</h4>
+      <p>
+        We are working with <a href="http://www.nextgenxr.com">Next Gen XR</a> 
+        on developing revit plug-ins for exporting geometry and BIM data
+        from Revit as FBX and OBJ formats. Our competitive advantages is that we generate 
+        optimized quadrilaterals and polygons instead of a mess of coplanar triangles.
+      </p>
+    </div>    
+    <div class="col-sm-4">
+      <h4>3ds Max Plug-ins</h4>
+      <p>
+        We are working set of 3ds Max plug-ins for working with volumes and point-clouds, 
+        based on OpenVDB. We are also working on a native particle system that fully integrates
+        with the 3ds Max modifier stack.   
+    </p>
     </div>
     <div class="col-sm-4">
-      <h4>3D File Formats</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <h4>Data Serialization, Translation</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <h4>Process Automation</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <h4>Visualization Tools</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <h4 style="color:#303030;">Cloud Services</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <h4>Process Automation</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <h4>Visualization Tools</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <h4 style="color:#303030;">Cloud Services</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+      <h4>File Formats</h4>
+      <p>
+        We are developing the specification and reference implementations for several open 
+        file-formats for the efficient representation and 
+        serialization/deserialization of 3D and 2D data. These formats optimized for efficient 
+        rendering and processing in the browser using WebGL or into any OpenGL based rendering
+        context.  
+      </p>
+      <!--
+      <ul>
+        <li><a href="https://github.com/ara3d/bfast">BFAST</a> format for binary arrays</li> 
+        <li><a href="https://github.com/ara3d/bfast">G3D</a> format for geometry</li>
+        <li><a href="https://github.com/ara3d/s3d">S3D</a> format for scene graphs</li>
+      </ul>
+    -->
     </div>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
+
+  <!-- Container (About Section) -->
+<div id="technology" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+        <h2>Technology</h2>
+        <p>
+            We are building a multi-language technology stack for 3D data processing 
+            that is second to none. Like any successful technology company our
+            foundation is a number of high quality industry proven open-source libraries
+            (e.g. OpenVDB, Assimp, System.Numerics, geometry3sharp, Three.JS,
+            OpenEXR, TBB, etc.). 
+        </p>  
+        <p>
+            In the process of building tools that surpass our customer's expectations we 
+            identified a need for some foundational low-level libraries that we are 
+            building ourselves, and releasing as open-source libraries.
+        </p>            
+        <ul>
+          <li><a href="https://github.com/ara3d/LinqArray">LinqArray</a> - A C# library for efficient processing of immutable array data structures</li>
+          <li><a href="https://github.com/ara3d/Math3D">Math3D</a> - A C# library of basic data structures and 3D vector math</li>
+          <li><a href="https://github.com/ara3d/FGeometry">FGeometry</a> - A C# library for 3D geometry manipulation</li>
+          <li><a href="https://github.com/ara3d/array_h">array_h</a> - A C++ library for working with containers of data in contiguous memory</li>
+          <li><a href="https://github.com/ara3d/bfast">BFAST</a> - A data/file format for storing arrays of binary data</li>
+          <li><a href="https://github.com/ara3d/s3d">S3D</a> - A file format for 3D scene data</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+
+        <h2>The Competitive Advantages of Open-Source</h2>
+
+        <p>
+          Ara 3D has a valuable core set of closed source IP that is built from our unique 
+          insights and experience based on decades of experience working in software development.
+          However, no company can ever attribute their financial succes to a vector math library 
+          that they kept proprietary, or a file format that no one else could use. 
+          <!--
+            In fact most
+            closed source general purpose libraries are usually buggy, incomplete, and offer 
+            sub-par performance compared to best in class open-source libraries. 
+          -->
+        </p>
+        <p>
+          Open-sourcing our foundation libraries (e.g. math, geometry, and array 
+          processing) gives our clients, partners, investors, and ourselves confidence 
+          that the libraries we are building on top of are the best quality they can be. 
+        </p>
+        <p>
+          By leveraging and contributing to the open-source community we benefit from the 
+          scrutiny and contributions of the open-source community and can go to market faster,
+          and with better technology and product.
+        </p>
+        <!--
+        <p>
+          Our mission is to establish Ara 3D as a leaders in the marketplace 
+          demonstrating vision, compentency, creativity, and innovation. 
+        </p>
+      -->
+      </div>      
+    </div>
+  </div>
+  
+  <!--
+
+      Our Team
+
+Ara 3D was founded by Christopher Diggins in 2018. He has over 20 years of software development experience from launching a small profitable e-commerce startup to working at Microsoft.
+
+From 2008 to 2017 Christopher worked for at Autodesk where he worked on the 3ds Max team as a principal engineer and lead the effort to develop the MCG visual programming environment.
+
+Christopher was co-author of The C++ Cookbook for O'Reilly and his published numerous articles on software development.
+
+Partnerships and Collaobrations
+
+We have working relationships with a number 
+
+TA Development 
+Next Gen XR 
+Clemex Technologies  
+-->
+
+<!-- Container (Portfolio Section) 
 <div id="portfolio" class="container-fluid text-center bg-grey">
   <h2>Portfolio</h2><br>
   <h4>What we have created</h4>
@@ -370,6 +467,8 @@
       </div>
     </div>
   </div><br>
+
+-->
   
   
 <!-- Container (Pricing Section)
@@ -440,15 +539,14 @@
 </div>
 -->
 
-<!-- Container (Contact Section) -->
+<!-- Container (Contact Section) 
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> Montreal, Canada</p>
-      <!-- <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p> -->
-      <p><span class="glyphicon glyphicon-envelope"></span>cdiggins@gmail.com</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> cdiggins@gmail.com</p>
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
@@ -468,7 +566,14 @@
     </div>
   </div>
 </div>
-
+-->
+<footer class="container-fluid text-center">
+    <div class="col-sm-12" width="100%">
+      <h4 class="text-center">4474 Hotel de Ville, Montreal QC | (438)828-7208 | cdiggins@gmail.com</h4>
+    </div>
+</footer>
+  
+<!--
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
@@ -538,7 +643,7 @@
             </div>      
   </p>
 </footer>
-
+-->
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
@@ -562,8 +667,18 @@ $(document).ready(function(){
       });
     } // End if
   });
-  
+
+ // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
   $(window).scroll(function() {
+    $(".navbar-logo").each(function(){
+      var winTop = $(window).scrollTop();
+      if ( winTop > 50) {
+          $(this).addClass("navbar-logo-shrink");
+       }
+       else {
+         $(this).removeClass("navbar-logo-shrink");
+       }
+    })
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
 
