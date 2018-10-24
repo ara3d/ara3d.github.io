@@ -301,7 +301,7 @@ var ara = {
             return;
         }
         // Variables 
-        var canvas, stats, gui, controls, width, height;
+        var stats, gui, controls;
         var camera, cameraTarget, scene, renderer, material, plane, sunlight, light1, light2, settings;
         var materialsLoaded = false;
         var objects = [];
@@ -461,19 +461,20 @@ var ara = {
             // Initialize the settings 
             settings = (new DeepMerge()).deepMerge(defaultOptions, options, undefined);
             // If a canvas is given, we will draw in it.
-            canvas = document.getElementById(settings.canvasId);
+            var canvas = document.getElementById(settings.canvasId);
+            renderer = new THREE.WebGLRenderer({ antialias: true, canvas: canvas });
             if (!canvas) {
+                // Add to a div in the web page.
                 var container = document.createElement('div');
                 document.body.appendChild(container);
                 container.appendChild(renderer.domElement);
             }
-            else {
-                renderer = new THREE.WebGLRenderer({ antialias: true, canvas: canvas, width: canvas.clientWidth, height: canvas.clientHeight });
-            }
-            // Create scene and camera, 
-            scene = new THREE.Scene();
+            // Create the camera and size everything appropriately 
             camera = new THREE.PerspectiveCamera();
             updateCamera();
+            resizeCanvas(true);
+            // Create scene object
+            scene = new THREE.Scene();
             // Create a property descriptor 
             var propDesc = getOptionsDescriptor();
             // Create a property list from the descriptor 
@@ -515,7 +516,6 @@ var ara = {
             controls.autoRotate = true;
             controls.autoRotateSpeed = 1.0;
             // Initial update of the camera
-            //recomputeSize();
             updateCamera();
             // Stats display 
             if (settings.showStats) {
@@ -523,14 +523,19 @@ var ara = {
                 renderer.domElement.appendChild(stats.dom);
             }
         }
-        function recomputeSize() {
-            if (canvas.clientWidth === width && canvas.clientHeight === height)
-                return;
-            width = canvas.clientWidth;
-            height = canvas.clientHeight;
-            camera.aspect = width / height;
+        function resizeCanvas(force) {
+            if (force === void 0) { force = false; }
+            var canvas = renderer.domElement;
+            var parent = canvas.parentElement;
+            //canvas.width  = parent.clientWidth;
+            //canvas.height = parent.clientHeight;
+            // https://stackoverflow.com/questions/41814539/html-div-height-keeps-growing-on-window-resize-event
+            // you must pass false here or three.js sadly fights the browser
+            //<canvas id="canvas3d" style="position: absolute"></canvas>
+            renderer.setSize(parent.clientWidth / window.devicePixelRatio, parent.clientHeight / window.devicePixelRatio, false);
+            // Set aspect ratio
+            camera.aspect = canvas.width / canvas.height;
             camera.updateProjectionMatrix();
-            renderer.setSize(width, height);
         }
         function loadObject(obj) {
             objects.push(obj);
@@ -688,7 +693,7 @@ var ara = {
         }
         // Updates scene objects, and draws the scene 
         function render() {
-            recomputeSize();
+            resizeCanvas();
             updateObjects();
             controls.update();
             renderer.render(scene, camera);
