@@ -1,0 +1,159 @@
+#-------------------------------
+# Site Settings
+title: Ara 3D Blog
+description: Tech, Travel, and other Tails. 
+logo: "/images/ara3d-icon.png"
+logo_dark:
+color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
+
+
+#-------------------------------
+# Navigation Settings
+menu_settings:
+  menu_items:
+    - title: "Home"
+      url: "/"
+    - title: "Latest"
+      url: "/latest/"
+    - title: "Authors"
+      url: "/authors/"
+    - title: "Resources"
+      submenu:
+      - url: "/videos/"
+        title: "Videos"
+      - url: "/featured/"
+        title: "Featured"
+      - url: "/elements/"
+        title: "Elements"
+      - url: "/tags/"
+        title: "Topics"
+#    - title: "About"
+#      url: "/about/"
+
+# Call to action button
+cta_button:
+  enable: false
+  cta_button_link: '/contact/'
+  cta_button_text: Get in touch
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  enable: true
+  hero_title: Tech, Travel and other Tails
+  hero_description: Adventures Building a Technology Start-up 
+
+hero_authors:
+  enable: true
+  hero_authors_description: Meet our bloggers
+
+
+#-------------------------------
+# Blog Section Settings
+blog:
+  enable: true
+  blog_title: Latest
+
+
+#-------------------------------
+# Recommended Section Settings
+recommended:
+  enable: true
+  recommended_title: Recommended
+  recommended_tag: "Lifestyle"
+
+
+#-------------------------------
+# About Section Settings
+about:
+  enable: true
+  about_title: Hello, I’m Bernie
+  about_subtitle: I’m the Real Boss of Ara 3D 
+  about_description: |
+    My mission is simple: provide motivation, and inspiration to the humans who operate Ara 3D.
+
+    I’m fortunate to have a team of hard-working, dedicated people who strive to build incredible 
+    tech and develop our company - all while making sure I’m properly fed, spoiled, and admired.
+
+    Let me introduce you to two of them.
+    
+    First, there’s Christopher Diggins: The Founder of Ara 3D. With many years of 
+    experience in software development, computational design, and pushing boundaries in the AEC industry, 
+    Christopher leads the way with creativity, resilience, and a dash of rebellious innovation. 
+    
+    Then we have Anne B., our HR Assistant to The Real Boss and Marketing Enthusiast. Anne 
+    holds a Master of Arts degree from Concordia University (Montreal) and a PhD in the fine art 
+    of ‘adapt or laugh’ - third-world edition (now applying those skills to startup life). She's 
+    passionate about chess, creative writing and discovering new places through travel.
+    
+    At Ara 3D, we believe a strong company culture empowers its people and respects the essential balance between work and life. 
+    As a true leader, I lead by example: prioritizing naps, chasing sunshine, laughing at memes, barking at cows 
+    (it’s a thing), and reminding everyone that joy is serious business. Around here, we lift each other up as we navigate the wild, 
+    wonderful world of startup life.
+    
+    Follow our journey as we share glimpses of our adventures: building cool tech and exploring new places while reshaping 
+    the future of the AEC industry!
+
+  about_image: "/images/the-boss.png"
+  about_image_alt: Bernie Diggins
+  about_button_text: Meet our team
+  about_button_link: "/about/"
+
+
+#-------------------------------
+# Authors Section Settings
+authors:
+  enable: true
+  authors_title: Top authors
+
+
+#-------------------------------
+# Newsletter Settings
+mailchimp:
+  enable: false
+  mailchimp_title: Stay Inspired Weekly. Your Friendly Dose of Tips & Insights!
+  mailchimp_description: Every Sunday, I deliver actionable tips for enhancing productivity, practical life advice, and top-notch insights gathered from various sources, right to your email inbox.
+  mailchimp_identifier: gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
+  mailchimp_input_text: Your email address
+  mailchimp_button_text: Subscribe
+
+
+#-------------------------------
+# Footer Settings
+footer_description: Join us on our journey building a software business that aims to improve the Archiecture, Engineering, and Construction (AEC) industry. 
+
+# Social Links
+social:
+# - {icon: "fa-brands fa-facebook-f", name: "Facebook", link: "https://facebook.com"}
+# - {icon: "fa-brands fa-x-twitter", name: "Twitter", link: "https://twitter.com"}
+# - {icon: "fa-brands fa-tiktok", name: "Tiktok", link: "https://www.tiktok.com"}
+- {icon: "fa-brands fa-instagram", name: "Instagram", link: "https://instagram.com/ara3dinc"}
+# - {icon: "fa-brands fa-mastodon", name: "Mastodon", link: "https://mastodon.social"}
+# - {icon: "fa-brands fa-dribbble", name: "Dribbble", link: "https://www.dribbble.com"}
+- {icon: "fa-brands fa-youtube", name: "Youtube", link: "https://youtube.com/cdiggins"}
+- {icon: "fa-brands fa-linkedin", name: "LinkedIn", link: "https://www.linkedin.com/company/ara3d" }
+
+# Example of adding a new link to the footer - {icon: "fa-brands fa-youtube", name: "Youtube", link: https://youtube.com"}
+# Other icons can be found at https://fontawesome.com/icons
+
+#-------------------------------
+# Contact Settings
+contact:
+  form_id: cdiggins@gmail.com # Add your form_id
+  title: Contact Us
+  description: Nomod comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free.
+  button_text: Send now
+
+# NOTE
+# Nomod theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus_identifier: anvod-studio-test # Add your shortname for Disqus Comment. For example anvod-studio-test
+
+
+#-------------------------------
+# Google Analytics
+google_analytics: # Add your GA Tracking Id

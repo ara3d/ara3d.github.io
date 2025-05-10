@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ara 3D</title>
+  <meta property="og:title" content="Ara 3D Inc. Company Home Page, Montreal Canada">
+  <meta property="og:description" content="Ara 3D - Innovative 3D Software Solutions for AEC">
+  <meta property="og:image" content="android-chrome-512x512.png">
+  <meta property="og:image:width" content="512">  
+  <meta property="og:image:height" content="512">  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="ara-viewer.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5b5fd5">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">
+        <svg class="navbar-logo" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 110 110">
+            <defs>
+                <linearGradient id="fadeGray" y2="100%" x2="0%">
+                    <stop stop-color="gray" stop-opacity="0" offset="0"/>
+                    <stop stop-color="gray" stop-opacity="1" offset="1"/>
+                </linearGradient>
+                <filter id="f4" x="0" y="0" >
+                        <feOffset result="offOut" in="SourceGraphic" dx="-3" dy="3" />
+                        <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+                        values="0.4 0 0 0 0 0 0.4 0 0 0 0 0 0.4 0 0 0 0 0 0.8 0" />
+                        <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="2" />
+                        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                      </filter>
+            </defs>
+            <g id="circle-logo">            
+            <circle cx="48" cy="44" r="48" stroke-width="3" fill="White"></circle>
+            <!--                
+             <g id="a" filter="url(#f4)" transform="scale(1 0.8)">
+                <path fill="hsl(312, 46%, 50%)" stroke-width="1" d="M 50 0 L 53 12 L 27 100 L 24 87 L 50 0"></path>
+                <path fill="#9370DB" stroke-width="1" d="M 80 85 Q 60 50 10 25 Q 50 60 65 100 L 80 85"></path>
+                <path fill="hsla(256, 90%, 39%, 1)" stroke-width="1" d="M 50 0 L 65 100 L 80 85 L 50 0"></path>
+            </g>
+        -->
+        <g id="a" filter="url(#f4)" transform="scale(1 0.8)">
+                <path fill="#01012d" stroke-width="1" d="M 50 0 L 53 12 L 27 100 L 24 87 L 50 0"></path>
+                <path fill="#9370DB" stroke-width="1" d="M 80 85 Q 60 50 10 25 Q 50 60 65 100 L 80 85"></path>
+                <path fill="hsla(256, 90%, 39%, 1)" stroke-width="1" d="M 50 0 L 65 100 L 80 85 L 50 0"></path>
+            </g>
+        </g>
+    </svg>          
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#studio">ARA 3D STUDIO</a></li>
+        <li><a href="#consulting">CONSULTING</a></li>
+        <li><a href="#custom">CUSTOM SOFTWARE</a></li>
+        <li><a href="#partners">PARTNERS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="about" class="jumbotron text-center">
+  <h1>Ara 3D</h1> 
+  <p>Modern Scalable Software for AEC</p>  
+</div>
+<div class="container-fluid">
+<!-- Container (About Section) -->
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <h2>About Us</h2>
+      <p>
+        We are a Montreal based start-up specializing in 3D software development for AEC professionals 
+        founded by <a href="https://www.linkedin.com/in/cdiggins/">Christopher Diggins</a>.
+      </p>
+      <p>
+        <ul>
+          <li>We are developing a product offering, <a href="#studio">Ara 3D Studio</a>, aimed at democratizing computational design.</li>
+          <li>We offer <a href="#consulting">executive consulting services</a> for companies developing software solutions for the AEC industry.</li>
+          <li>We help with planning and/or developing <a href="#custom">software solutions</a> from prototypes to fully-features commercial products.</li>
+          <li>We contribute to, and maintain, multiple <a href="#projects">open-source projects</a></li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <div id="studio" class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+    <h2>Ara 3D Studio</h2>
+    <p>
+      Our flagship project, expected to be opened as a public beta on March 1st, 2025 is Ara 3D Studio.
+      Ara 3D Studio is an interactive real-time 3D environment that puts computational design within everyone's reach.
+    </p>
+    <p>  
+      It is inspired by parametric design tools like Grasshopper and Dynamo, but is designed to enable the generation and modification of 
+      extremely large amounts of data while maintaining interactive frame-rates.
+    </p>
+    <p>
+      Unlike other parametric design tools Ara 3D Studio is built on C# scripts rather than graphs.
+      It comes with an extensive and easy to use open-source geometry library. This means your scripts and workflows can be freely reused outside 
+      of the environment, including in commercial tools or private in-house tools. You can even run your scripts on the browser.      
+    </p>
+    <p>
+      For those with no coding experience, a state-of-the-art integrated AI assistant generate the code you want with a simple 
+      natural language input.
+    </p>
+    <p>
+      Send us an <a href="mailto:info@ara3d.com">email</a> to be informed when the beta is ready for download. 
+    </p>  
+  </div>
+  </div>
+
+  <div id="services" class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+    <h2>Executive Consulting Services</h2>
+    <p>
+      We offer executive consulting services to businesses working with 3D data or developing
+      software for use in the AEC industry. Our expertise is called upon to provide guidance on:
+      <ul>
+        <li>Business development</li>
+        <li>Product management</li>
+        <li>Software architecture</li>
+        <li>Data interoperability</li>
+        <li>Developer user experience</li>
+      </ul> 
+    </p>
+    <p>
+      Our CEO <a href="https://www.linkedin.com/in/cdiggins">Christopher Diggins</a> is an experienced 
+      computer science instructor and public speaker and is available for seminars and workshops.  
+    </p>
+    </div>
+  </div>
+
+  <div id="custom" class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+    <h2>Custom 3D and BIM Software Development for AEC</h2>
+    <p>
+      We offer custom software development services for the AEC industry.   
+      Together we have many years of experience in web-development, desktop application development, and plug-in 
+      development. 
+    </p>
+    <p>
+      We specialize in building prototypes that demonstrate solutions to what are considered by some as "hard"
+      technical problems, such as software optimization or large scale data transformation. We are also excited to
+      work on automating tasks, data analysis, plug-in development, and adding features to existing code-bases.  
+    </p>
+    <p>
+      With the help of our <a href="#partners">partners</a> we are equipped to address a wide 
+      range of technologies and project scopes. 
+    </p>
+    </div>
+  </div>
+
+  <div id="partners" class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+    <h2>Our Partners</h2>
+    <h3><a href="https://e-verse.com">e-verse</a></h3>
+      <p>Based in Miami Florida, their motto is "architects and engineers who code".
+      </p>
+    <p> 
+      E-verse offers custom software development services to AEC firms and technology companies. We work closely with e-verse to make 
+      sure that we offer guidance and perspectives that are not only informed by best practices in the software industry, but that 
+      align with how users and customers in the AEC industry actually work.
+    </p>
+    <p>
+      When you engage with Ara 3D, we specialize develop prototypes, software development plans, and providing strategic and high-level technical guidance. 
+      E-verse advises us, provides estimates, and can offer additional software development resources as required for larger scale projects. 
+    </p>  
+    </div>
+  </div>
+
+
+  <div id="projects" class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+    <h2>Open-Source Projects</h2>
+    <p>    
+      We manage or have contributed to a large number of <a href="https://github.com/ara3d">open-source libraries</a>. Here are a few of them: 
+    </p>
+    <ul>
+      <li><a href="https://github.com/ara3d/bowerbird">Bowerbird</a> - a C# scripting environment for Revit</li>
+      <li><a href="https://github.com/ara3d/revit-utils">Revit Utils</a> - a set of open-source libraries for Revit</li>
+      <li><a href="https://github.com/ara3d/plato.geometry">Plato.Geometry</a> - a C# library for 2D and 3D math and geometry</li>
+      <li><a href="https://github.com/cdiggins/plato">Plato</a> - a cross platform programming language</li>
+      <li><a href="https://github.com/vimaec/bfast">BFAST</a> - An efficient serialization format for storing arrays of binary data</li>
+      <li><a href="https://github.com/vimaec/vim-webgl-viewer">VIM WebGL Viewer</a> - A 3D WebGL viewer for AEC data</li>
+      <li><a href="https://github.com/vimaec/vim-format">VIM File Format</a> - A file format optimized for rendering and querying very large BIM models</li>
+    </ul>
+    </div>
+  </div>
+  <div id="contact" class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+      
+      <h2>Contact Us</h2>
+      <blockquote class="text-left">
+          <i>“As long as we work together&mdash;with both urgency and determination&mdash;there are no limits to what we can achieve.”</i><br/>
+          <div class="text-right">&mdash;Paul Allen</div>
+      </blockquote>
+      <p class="text-left">
+          We are always interested in creating new relationships with people and business passionate about 3D. 
+          We would love to <a href="info@ara3d.com"></a>hear about your projects and needs, and answer any questions you may have</a>. 
+      </p>
+      </div>
+  </div>
+  <div class="row text-center">
+      <div class="col-sm-12">
+      <h4 class="text-center">Copyright 2018-2025 Ara 3D Inc. <b> | </b> Montreal QC, Canada<br/>(438)828-7208 <b> | </b> <a href="mailto:info@ara3d.com">info@ara3d.com</a></h4>
+      </div>
+  </div>    
+  <div class="row text-center">
+  </div>
+  <div id="social" class="row text-center">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <a href="mailto:info@ara3d.com" class="btn-link" style="text-decoration: none" title="email">
+          <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+          <i class="fa fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
+          </span>
+      </a>
+      <a href="https://www.linkedin.com/company/ara3d/" class="btn-link" style="text-decoration: none" title="LinkedIn">
+          <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+          <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+          </span>
+      </a>
+      <a href="https://github.com/ara3d" class="btn-link" style="text-decoration: none" title="GitHub">
+          <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+          <i class="fa fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+          </span>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <a href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>    
+  </div>      
+</div>
+
+  
+</body>
+</html>
