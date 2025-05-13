@@ -6,9 +6,9 @@ date: 2025-05-06 10:00:00 -0500
 author: christopher
 image: '/images/me-coding-lake.png'
 video_embed: 
-tags: [meta]
+tags: [introductions]
 featured: true
-toc: true
+toc: false
 ---
 
 ## Welcome to the official Ara 3D team blog. 
