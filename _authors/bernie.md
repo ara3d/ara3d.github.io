@@ -1,5 +1,5 @@
 ---
-username: Bernie
+username: bernie
 name: Bernie Diggins
 image: '/images/bernie-ceo.png'
 location: Montreal

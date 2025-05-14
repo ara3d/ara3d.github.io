@@ -1,5 +1,5 @@
 ---
-username: Anne
+username: anne
 name: Anne B.
 image: '/images/anne-headshot.jpg'
 location: Montreal
