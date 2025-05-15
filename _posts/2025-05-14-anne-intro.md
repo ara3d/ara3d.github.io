@@ -4,13 +4,12 @@ title:  New Beginnings, Big Adventures (and a Few Other Tails Along the Way)
 description:
 date: 2025-05-14 10:00:00 -0500
 author: anne
-image: '/images/anne-b.png'
+image: '/images/anne-b-square.png'
 video_embed: 
 tags: [introductions]
 featured: true
 toc: false
 ---
-
 
 ## Hola!
 
