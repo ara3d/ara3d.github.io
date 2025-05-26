@@ -1,3 +1,5 @@
+# About the Theme 
+
 # Nomod is a multipurpose Jekyll blog theme
 
 Nomod is a multipurpose Jekyll blog theme designed for creatives, writers, and developers who value both aesthetics and functionality. It’s the perfect choice for anyone looking to host their blog effortlessly on GitHub Pages, enjoying the benefits of a fast and secure site with zero hosting costs. It supports various post formats, including video posts and multiple authors, making it ideal for collaborative projects or multi-contributor blogs. This versatility allows you to create and manage content seamlessly, providing an engaging experience for your audience, regardless of the type of content you wish to share.

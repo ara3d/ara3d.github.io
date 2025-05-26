@@ -3,58 +3,53 @@
     <channel>
         <title>Ara 3D Blog</title>
         <description>Tech, Travel, and other Tails.</description>
-        <link>https://nomod.netlify.app/</link>
-        <atom:link href="https://nomod.netlify.app/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 14 May 2025 20:07:22 -0400</pubDate>
-        <lastBuildDate>Wed, 14 May 2025 20:07:22 -0400</lastBuildDate>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Mon, 26 May 2025 16:01:28 -0400</pubDate>
+        <lastBuildDate>Mon, 26 May 2025 16:01:28 -0400</lastBuildDate>
         <generator>Jekyll v4.4.1</generator>
         
             <item>
                 <title>New Beginnings, Big Adventures (and a Few Other Tails Along the Way)</title>
                 <description>&lt;h2 id=&quot;hola&quot;&gt;Hola!&lt;/h2&gt;
 
-&lt;p&gt;I’m &lt;strong&gt;Anne B.&lt;/strong&gt;, the official HR Assistant to &lt;em&gt;The Real Boss&lt;/em&gt; (yes, the one with four legs and an endearing sense of entitlement). Sometimes, I work very closely with Christopher — even literally, when the boss feels generous with seating arrangements.
-It’s my pleasure to be here for my very first blog post, and I couldn’t be more excited to start this journey with you.
-In my role, you’ll usually find me working behind the scenes. When I’m not in the thick of HR or marketing magic, I make sure our workplace stays fun; after all, you can’t build a great company without a few laughs and the occasional pet-talk break.&lt;/p&gt;
+&lt;p&gt;I’m &lt;strong&gt;Anne B.&lt;/strong&gt;, the official HR Assistant to &lt;em&gt;The Real Boss&lt;/em&gt; (yes, the one with four legs and an endearing sense of entitlement). Sometimes, I work very closely with Christopher, even literally, when the boss feels generous with seating arrangements.&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;It’s my pleasure to be here for my very first blog post, and I couldn’t be more excited to start this journey with you.&lt;/p&gt;
 
-&lt;h2 id=&quot;-throwback-travels&quot;&gt;🧳 Throwback Travels&lt;/h2&gt;
+&lt;p&gt;In my role, you’ll usually find me working behind the scenes. When I’m not in the thick of HR or marketing magic, I make sure our workplace stays fun; after all, you can’t build a great company without a few laughs and the occasional pet-talk break.&lt;/p&gt;
 
-&lt;p&gt;I’ll be sharing a special series called &lt;strong&gt;Throwback Travels&lt;/strong&gt;: stories from past trips, from tagging along with Christopher to AEC hackathons, symposiums, and other events, to discovering new corners of the world. 
-While he does what he loves most (building new tech and connecting with brilliant minds), I get to soak in the sights, food, and culture along the way.
-Expect some nice pics, travel tips (learned the hard way), and more than a few &lt;em&gt;“I can’t believe this just happened”&lt;/em&gt; moments.&lt;/p&gt;
+&lt;h2 id=&quot;throwback-travels&quot;&gt;Throwback Travels&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Our trips always include at least one of those!&lt;/p&gt;
+&lt;p&gt;I’ll be sharing a special series called &lt;strong&gt;Throwback Travels&lt;/strong&gt;: stories from past trips, from tagging along with Christopher to AEC hackathons, symposiums, and other events, to discovering new corners of the world.&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;While he does what he loves most (building new tech and connecting with brilliant minds), I get to soak in the sights, food, and culture along the way.&lt;/p&gt;
 
-&lt;p&gt;Oh, and did I mention I come from a small town in Cuba?&lt;/p&gt;
+&lt;p&gt;Expect some nice pics, travel tips (learned the hard way), and more than a few &lt;em&gt;“I can’t believe this just happened”&lt;/em&gt; moments. &lt;em&gt;Disclaimer:&lt;/em&gt; Our trips always include at least one of those!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Oh, and did I mention I come from a small town in Cuba?&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Imagine a girl whose idea of a traffic jam was a horse taking a break in the middle of the road, taking a taxi from the airport in New York or Paris, and praying she’d make it to the hotel alive!&lt;br /&gt;
 But I digress.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;images/anne-bicycle.jpg&quot; alt=&quot;Anne Bicycle&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/anne-bicycle.jpg&quot; alt=&quot;Anne Bicycle&quot; /&gt;
+&lt;em&gt;From the sandy roads of Santa Lucia (Cuba) to the cobbled paths along the Seine (Paris).&lt;/em&gt;&lt;/p&gt;
 
-&lt;center&gt;*From the sandy roads of Santa Lucia (Cuba) to the cobbled paths along the Seine (Paris).*&lt;/center&gt;
+&lt;p&gt;&lt;img src=&quot;images/life-is-journey.jpg&quot; alt=&quot;Life is a Journey&quot; /&gt; 
+&lt;em&gt;Now enjoying the ride with Christopher!&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;images/life-is-journey.jpg&quot; alt=&quot;Life is a Journey&quot; /&gt;&lt;/p&gt;
-
-&lt;center&gt;*Now enjoying the ride with Christopher!*&lt;/center&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;Stay tuned for these stories and more (including the quintessential trips to recharge and disconnect). And don’t worry: it won’t be all about travel. There will be plenty of other &lt;strong&gt;“tails”&lt;/strong&gt; along the way!
+&lt;p&gt;Stay tuned for these stories and more (including the quintessential trips to recharge and disconnect). And don’t worry: it won’t be all about travel. There will be plenty of other “tails” along the way!
 I’m thrilled to share all of this with you.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Here’s to new beginnings, shared adventures, and yes, a few wrong turns&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;(&lt;em&gt;because who doesn’t love a good detour?&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Here’s to new beginnings, shared adventures, and yes, a few wrong turns&lt;/em&gt; (&lt;em&gt;because who doesn’t love a good detour?&lt;/em&gt;)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;– Anne B.&lt;/strong&gt;&lt;/p&gt;
 </description>
                 <pubDate>Wed, 14 May 2025 11:00:00 -0400</pubDate>
-                <link>https://nomod.netlify.app/anne-intro</link>
-                <guid isPermaLink="true">https://nomod.netlify.app/anne-intro</guid>
+                <link>http://localhost:4000/anne-intro</link>
+                <guid isPermaLink="true">http://localhost:4000/anne-intro</guid>
                 
                 <category>introductions</category>
                 
@@ -123,15 +118,15 @@ The team needed serious help. Having packed some extra Covid pounds, they had to
 &lt;p&gt;Can’t wait to share more with you!&lt;br /&gt;
 Put on your harness for more adventures and behind-the-scenes Ara 3D &lt;em&gt;tails&lt;/em&gt;, as we chase dreams (or balls!) and shake up the future of the AEC field.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Hasta pronto, amigos!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Hasta pronto, amigos!&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;images/bernie/looking-back.png&quot; alt=&quot;Bernie looking back&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;- &lt;em&gt;Bernie, Real Boss / Real Cute&lt;/em&gt; 🐶&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;Bernie&lt;/strong&gt;, Real Boss / Real Cute 🐶&lt;/p&gt;
 </description>
                 <pubDate>Mon, 12 May 2025 16:00:00 -0400</pubDate>
-                <link>https://nomod.netlify.app/real-boss</link>
-                <guid isPermaLink="true">https://nomod.netlify.app/real-boss</guid>
+                <link>http://localhost:4000/real-boss</link>
+                <guid isPermaLink="true">http://localhost:4000/real-boss</guid>
                 
                 <category>introductions</category>
                 
@@ -160,8 +155,8 @@ Put on your harness for more adventures and behind-the-scenes Ara 3D &lt;em&gt;t
 
 </description>
                 <pubDate>Tue, 06 May 2025 11:00:00 -0400</pubDate>
-                <link>https://nomod.netlify.app/hello-world</link>
-                <guid isPermaLink="true">https://nomod.netlify.app/hello-world</guid>
+                <link>http://localhost:4000/hello-world</link>
+                <guid isPermaLink="true">http://localhost:4000/hello-world</guid>
                 
                 <category>introductions</category>
                 
