@@ -68,33 +68,22 @@ recommended:
 # About Section Settings
 about:
   enable: true
-  about_title: Hello, I’m Bernie
-  about_subtitle: I’m the Real Boss of Ara 3D 
-  about_description: |
-    My mission is simple: provide motivation, and inspiration to the humans who operate Ara 3D.
+  about_title: "Welcome to Our World"
+  about_subtitle: "by The Real Boss (Chief Motivator at Ara 3D)"
+  about_description: >
+    Meet the brains (and paws) behind this blog:
 
-    I’m fortunate to have a team of hard-working, dedicated people who strive to build incredible 
-    tech and develop our company - all while making sure I’m properly fed, spoiled, and admired.
+    Christopher Diggins, founder and CEO, is our fearless leader in all things code and chaos. 
+    Fueled by caffeine, he's always pushing boundaries in the AEC world.
 
-    Let me introduce you to two of them.
-    
-    First, there’s Christopher Diggins: The Founder of Ara 3D. With many years of 
-    experience in software development, computational design, and pushing boundaries in the AEC industry, 
-    Christopher leads the way with creativity, resilience, and a dash of rebellious innovation. 
-    
-    Then we have Anne B., our HR Assistant to The Real Boss and Marketing Enthusiast. Anne 
-    holds a Master of Arts degree from Concordia University (Montreal) and a PhD in the fine art 
-    of ‘adapt or laugh’ - third-world edition (now applying those skills to startup life). She's 
-    passionate about chess, creative writing and discovering new places through travel.
-    
-    At Ara 3D, we believe a strong company culture empowers its people and respects the essential balance between work and life. 
-    As a true leader, I lead by example: prioritizing naps, chasing sunshine, laughing at memes, barking at cows 
-    (it’s a thing), and reminding everyone that joy is serious business. Around here, we lift each other up as we navigate the wild, 
-    wonderful world of startup life.
-    
-    Follow our journey as we share glimpses of our adventures: building cool tech and exploring new places while reshaping 
-    the future of the AEC industry!
+    Anne B., my loyal HR Assistant and Marketing Enthusiast, holds an M.A. from Concordia U.
+    and a PhD in the fine art of 'adapt or laugh' (third-world edition). She's passionate about 
+    chess, writing, and plotting the next travel adventure.
 
+    And then there's me: The Real Boss. I run on naps, sunshine, and a strict policy of barking at cows 
+    (don't question it). I keep team morale high and priorities in order: snacks, joy, then work.
+
+    This blog is your backstage pass to our world. Stick around: We have stories to tell!
   about_image: "/images/the-boss.png"
   about_image_alt: Bernie Diggins
   about_button_text: Meet our team

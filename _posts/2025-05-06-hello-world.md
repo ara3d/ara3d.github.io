@@ -4,7 +4,7 @@ title: Welcome to Tech, Travel, and other Tails
 description:
 date: 2025-05-06 10:00:00 -0500
 author: christopher
-image: '/images/me-coding-lake.png'
+image: '/images/chris-pic-lake.png'
 video_embed: 
 tags: [introductions]
 featured: true
@@ -28,5 +28,3 @@ This blog is a shared space. You'll also be hearing from the Ara 3D team, our pa
 We're building this as a living archive: a place for documenting our adventures, learnings, ideas, stories, and projects - written in a voice that's uniquely ours. 
 
 Thanks for being here. 🤗
-
-
