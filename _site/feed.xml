@@ -3,10 +3,10 @@
     <channel>
         <title>Ara 3D Blog</title>
         <description>Tech, Travel, and other Tails.</description>
-        <link>http://localhost:4000/</link>
-        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 26 May 2025 16:01:28 -0400</pubDate>
-        <lastBuildDate>Mon, 26 May 2025 16:01:28 -0400</lastBuildDate>
+        <link>https://nomod.netlify.app/</link>
+        <atom:link href="https://nomod.netlify.app/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Thu, 29 May 2025 18:11:27 -0400</pubDate>
+        <lastBuildDate>Thu, 29 May 2025 18:11:27 -0400</lastBuildDate>
         <generator>Jekyll v4.4.1</generator>
         
             <item>
@@ -48,8 +48,8 @@ I’m thrilled to share all of this with you.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;– Anne B.&lt;/strong&gt;&lt;/p&gt;
 </description>
                 <pubDate>Wed, 14 May 2025 11:00:00 -0400</pubDate>
-                <link>http://localhost:4000/anne-intro</link>
-                <guid isPermaLink="true">http://localhost:4000/anne-intro</guid>
+                <link>https://nomod.netlify.app/anne-intro</link>
+                <guid isPermaLink="true">https://nomod.netlify.app/anne-intro</guid>
                 
                 <category>introductions</category>
                 
@@ -125,8 +125,8 @@ Put on your harness for more adventures and behind-the-scenes Ara 3D &lt;em&gt;t
 &lt;p&gt;- &lt;strong&gt;Bernie&lt;/strong&gt;, Real Boss / Real Cute 🐶&lt;/p&gt;
 </description>
                 <pubDate>Mon, 12 May 2025 16:00:00 -0400</pubDate>
-                <link>http://localhost:4000/real-boss</link>
-                <guid isPermaLink="true">http://localhost:4000/real-boss</guid>
+                <link>https://nomod.netlify.app/real-boss</link>
+                <guid isPermaLink="true">https://nomod.netlify.app/real-boss</guid>
                 
                 <category>introductions</category>
                 
@@ -152,11 +152,10 @@ Put on your harness for more adventures and behind-the-scenes Ara 3D &lt;em&gt;t
 &lt;p&gt;We’re building this as a living archive: a place for documenting our adventures, learnings, ideas, stories, and projects - written in a voice that’s uniquely ours.&lt;/p&gt;
 
 &lt;p&gt;Thanks for being here. 🤗&lt;/p&gt;
-
 </description>
                 <pubDate>Tue, 06 May 2025 11:00:00 -0400</pubDate>
-                <link>http://localhost:4000/hello-world</link>
-                <guid isPermaLink="true">http://localhost:4000/hello-world</guid>
+                <link>https://nomod.netlify.app/hello-world</link>
+                <guid isPermaLink="true">https://nomod.netlify.app/hello-world</guid>
                 
                 <category>introductions</category>
                 
